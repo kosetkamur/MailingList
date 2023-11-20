@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width">
+
+	<title>Title</title>
+
+	<style>
+		.showBig{
+			display: block;
+		}
+		.showSmall{
+			display: none;
+		}
+
+		.right-md{
+			text-align: right!important;
+		}
+		.center{
+			text-align: center!important;
+		}
+		th img{
+		}
+		.text_desktop{
+			display: block;
+
+		}
+		.text_mobile{
+			display: none;
+			text-align: center!important;
+		}
+		.show{
+			display: block;
+		}
+		@media only screen {
+			html {
+				min-height: 100%;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+
+			.mobileTextPlash{
+				padding: 36px 0 37px 10px!important;
+			}
+			.fullWidth{
+				width: 400px!important;
+			}
+			.fio{
+				font-size: 13px!important;
+			}
+			.showSmall{
+				display: block;
+			}
+			.bookImg{
+				max-width: 110px!important;
+				padding-top: 20px;
+			}
+			.button{
+				max-width: 400px!important;
+			}
+			.personBlock div{
+				font-size: 21px!important;
+			}
+			.textCenter{
+				text-align: center!important;
+			}
+			.sloganOther{
+				font-size: 20px!important;
+
+				text-align: center!important;
+			}
+			.slogS{
+				max-width: 180px!important;
+			}
+			.titlePlash{
+				/*font-size: 24px!important;*/
+				text-align: left!important;
+			}
+			.plashText{
+				/*font-size: 28px!important;*/
+			}
+			.plashText sup{
+				font-size: 13px!important;
+			}
+			.plashHide{
+				display: none!important;
+			}
+			.bullsEnd{
+				width: 400px;
+			}
+			.plashMob{
+				display: block!important;
+			}
+			.bulls{
+				max-width: 600px!important;
+			}
+			.plashOne{
+				max-width: 450px!important;
+			}
+			.logoMob{
+				max-width: 200px!important;
+			}
+			.bullText{
+				font-size: 28px!important;
+			}
+			.bullImg{
+				max-width: 15px!important;
+			}
+
+			.logoMain{
+				/*max-width: 40px!important;*/
+				/*padding-left: 40px;*/
+			}
+			.mainTitle{
+				font-size: 24px!important;
+			}
+			.slog{
+				font-size: 17px!important;
+			}
+			.mobilePlash{
+				max-width: 300px!important;
+			}
+			.titleHead{
+				font-size: 14px!important;
+			}
+			.small-float-center {
+				margin: 0 auto !important;
+				float: none !important;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			.hide-for-large {
+				display: block !important;
+				width: auto !important;
+				overflow: visible !important;
+				max-height: none !important;
+				font-size: inherit !important;
+				line-height: inherit !important;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			table.body table.container .hide-for-large {
+				display: table !important;
+				width: 100% !important;
+			}
+
+			.mobile-fonts{
+				font-size: 18px!important;
+			}
+			.mobile-fonts2{
+				font-size: 14px!important;
+			}
+			.sizeImg{
+				width: 170px!important;
+				max-width: 170px!important;
+			}
+			.align-center{
+				text-align: center!important;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			.row{
+				max-width: 510px;
+			}
+			table.body table.container .show-for-large {
+				display: none !important;
+				width: 0;
+				mso-hide: all;
+				overflow: hidden;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			.showBig{
+				display: none;
+			}
+			table.body img {
+				width: auto;
+				height: auto;
+			}
+			.icon_padding img{
+				padding-top: 0;
+				width: 55px!important;
+				min-width: 55px!important;
+				max-width: 55px!important;
+			}
+			table.body center {
+				min-width: 0 !important;
+			}
+
+			table.body .container {
+				width: 100% !important;
+			}
+
+			table.body .columns .columns {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+
+			table.body .collapse .columns {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+
+			th.small-2 {
+				display: inline-block !important;
+				width: 16.66667% !important;
+			}
+
+			th.small-4 {
+				display: inline-block !important;
+				width: 33.33333% !important;
+			}
+
+			th.small-5 {
+				display: inline-block !important;
+				width: 39.66667% !important;
+			}
+
+			th.small-6 {
+				display: inline-block !important;
+				width:49% !important;
+			}
+
+			th.small-7 {
+				display: inline-block !important;
+				width: 58.33333% !important;
+			}
+			th.small-8 {
+				display: inline-block !important;
+				width: 66.66667% !important;
+			}
+
+			th.small-10 {
+				display: inline-block !important;
+				width: 82.33333% !important;
+			}
+
+			th.small-12 {
+				display: inline-block !important;
+				width: 100% !important;
+			}
+
+			.columns th.small-12 {
+				display: block !important;
+				width: 100% !important;
+			}
+
+			table.menu {
+				width: 100% !important;
+			}
+
+			table.menu td,
+			table.menu th {
+				width: auto !important;
+				display: inline-block !important;
+			}
+
+			table.menu.vertical td,
+			table.menu.vertical th {
+				display: block !important;
+			}
+
+			table.menu[align="center"] {
+				width: auto !important;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			.table-head table {
+				font-size: 14px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			.table-level i {
+				font-size: 10px;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			table.body .columns {
+				height: auto !important;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				padding-left: 10px !important;
+				padding-right: 10px !important;
+			}
+			table.body .column {
+				height: auto !important;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				padding-left: 5px !important;
+				padding-right: 5px !important;
+			}
+			table.body .columna {
+				height: auto !important;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: content-box;
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+
+			table.body .columns .columns {
+				padding-left: 0 !important;
+				padding-right: 0!important;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			h1 {
+				font-size: 22px !important;
+			}
+			.go_to_twenthy_four{
+				font-size: 20px!important;
+			}
+			.smallText{
+				font-size: 12px!important;
+			}
+			.mail_img{
+				width: 20px!important;
+				max-width: 20px!important;
+				min-width: 20px!important;
+			}
+			.geo_img{
+				width: 16px!important;
+				max-width: 16px!important;
+				min-width: 16px!important;
+				padding-left: 2px;
+			}
+			.go_to_twenthy_five{
+				font-size: 22px!important;
+			}
+			.phone_img{
+				width: 18px!important;
+				max-width: 18px!important;
+				min-width: 18px!important;
+			}
+			.gal_img{
+				width: 30px!important;
+				max-width: 30px!important;
+				min-width: 30px!important;
+			}
+			.columns-0 td.last.columns {
+				padding-left: 10px !important;
+				padding-right: 40px !important;
+			}
+			.btn_img{
+				width: 234px!important;
+				max-width: 234px!important;
+				min-width: 234px!important;
+			}
+		}
+
+	</style>
+
+</head>
+
+<body style="margin: 0;background-color: #FFFFFF;">
+<table class="body" width="600px" style="background-color: #151520; margin: 0;  border-collapse: collapse; border-spacing: 0; color: #000000; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; height: 100%; line-height: 1.4; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%">
+	<tbody>
+	<tr style="padding: 0; text-align: left; vertical-align: top">
+		<td class="center" align="center" valign="top" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000000; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; hyphens: auto; line-height: 1.4; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word">
+			<center data-parsed="" style="min-width: 600px; width: 100%">
+
+				<table align="center" class="container" width="600" style="max-width: 600px;  border-spacing: 0; background-color: #151520;" border="0"  cellpadding="0" cellspacing="0" bgcolor="#151520">
+					<tbody>
+					<tr>
+						<td>
+							<table align="center" class="" style="max-width: 600px; border-spacing: 0; " width="600" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+								<tr>
+									<th class="small-12" valign="middle">
+										<img width="600" src="image/header.png" style="max-width: 600px;width: 100%;display: block" alt='баннер'>
+									</th>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<table align="center" class="container" width="600" style="max-width: 600px;  border-spacing: 0; background-color: #151520;" border="0"  cellpadding="0" cellspacing="0">
+					<tbody>
+					<tr>
+						<td align="center">
+							<div style="font-size: 15px;">&emsp;</div>
+							<table align="center" class="row" style="max-width: 600px; border-spacing: 0; " width="600" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+								<tr>
+									<th class="small-12" valign="middle">
+										<table width="600" cellspacing="0" border="0" cellpadding="0">
+											<tbody>
+											<tr>
+												<td width="30" valign="middle" align="left" bgcolor="" ></td>
+												<td width="230" valign="middle" align="left" bgcolor="" >
+													<div style="color: #FFFFFF; font-size: 17px; font-family: Arial,sans-serif;font-weight: normal;text-align: left">
+														Ох уж это вечное сравнение себя с другими. Пора прекращать. Если тебе нравится танцевать,<br>
+														<b style="text-transform: uppercase">бери и делай это</b>.
+													</div>
+												</td>
+												<td width="240" valign="middle" align="right" bgcolor="" >
+													<img width="136" src="image/block1.png" style="max-width: 136px;width: 100%;display: block" alt='треугольник'>
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</th>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<table align="center" class="container" width="600" style="max-width: 600px;  border-spacing: 0; background-color: #151520;" border="0"  cellpadding="0" cellspacing="0">
+					<tbody>
+					<tr>
+						<td align="center">
+							<div style="font-size: 5px;">&emsp;</div>
+							<table align="center" class="row" style="max-width: 600px; border-spacing: 0; " width="600" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+								<tr>
+									<th class="small-12" valign="middle">
+										<table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#151520">
+											<tbody>
+											<tr>
+												<td width="181" valign="bottom" align="left" bgcolor="" ></td>
+												<td width="389" valign="top" align="left" bgcolor="" >
+													<div style="color: #FFFFFF; font-size: 17px; font-family: Arial,sans-serif;font-weight: normal;text-align: right">
+														Да, звучит глупо, но так и есть. Не нужно смотреть на тех, кто танцует уже 10 лет и говорить «ну вот куда мне до нее».
+														Это дорога в никуда. Мы все приходим в какое-то дело<br> своим путем.<br>
+														<div style="font-size: 10px">&emsp;</div>
+														Со своим опытом.<br>
+														<div style="font-size: 10px">&emsp;</div>
+														Со своей природой.<br>
+														<div style="font-size: 10px">&emsp;</div>
+													</div>
+												</td>
+												<td width="30" valign="middle" align="left" bgcolor="" ></td>
+											</tr>
+											</tbody>
+										</table>
+										<table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#151520">
+											<tbody>
+											<tr>
+												<td width="181" valign="bottom" align="left" bgcolor="" >
+													<img width="181" src="image/block2.png" style="max-width: 181px;width: 100%;display: block" alt='треугольник'>
+													<div style="font-size: 17px;">&emsp;</div>
+												</td>
+												<td width="389" valign="top" align="left" bgcolor="" >
+													<div style="color: #FFFFFF; font-size: 17px; font-family: Arial,sans-serif;font-weight: normal;text-align: right">
+														И ты не можешь это изменить, стать кем-то другим. Ты можешь только принять себя и работать с тем, что есть.<br><br>
+
+														<b style="text-transform: uppercase">И наслаждаться</b>.<br><br>
+
+														А еще ты можешь вдохновляться. Безоценочно. Не сравнивая себя с источником вдохновения, а лишь напитываясь энергией этого человека и применяя его/ее опыт на своем пути.
+													</div>
+												</td>
+												<td width="30" valign="middle" align="left" bgcolor="" ></td>
+											</tr>
+											</tbody>
+										</table>
+									</th>
+								</tr>
+								</tbody>
+							</table>
+							<div style="font-size: 15px;">&emsp;</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<table align="center" class="container" width="600" style="max-width: 600px;  border-spacing: 0; background-color: #151520;" border="0"  cellpadding="0" cellspacing="0">
+					<tbody>
+					<tr>
+						<td align="center">
+							<table align="center" class="row" style="max-width: 600px; border-spacing: 0; " width="600" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+								<tr>
+									<th class="small-12 columns" valign="middle" align="center">
+										<div style="font-size: 25px">&emsp;</div>
+										<table width="540" border="0" cellpadding="0" cellspacing="0" style="border: 2px solid #FF1F00">
+											<tbody>
+											<tr>
+												<td width="540" valign="top" align="center" bgcolor="" >
+													<div style="font-size: 20px">&emsp;</div>
+													<table width="490" border="0" cellpadding="0" cellspacing="0">
+														<tbody>
+														<tr>
+															<td width="20" valign="middle" align="left" bgcolor="" >
+																<div style="font-size: 10px">&emsp;</div>
+															</td>
+															<td width="450" valign="middle" align="left" bgcolor="" >
+																<div style="color: #FFFFFF; font-size: 17px; font-family: Arial,sans-serif;font-weight: bold;text-align: center;text-transform: uppercase">
+																	Я приглашаю тебя вдохновиться мной.
+																</div>
+																<div style="font-size: 15px">&emsp;</div>
+																<div style="color: #FFFFFF; font-size: 17px; font-family: Arial,sans-serif;font-weight: normal;text-align: left">
+																	Звучит нескромно, я знаю. Но ты проживешь вместе со мной три истории и сможешь забрать их частички в свою собственную. И кто знает, возможно скоро уже я буду вдохновляться тобой.
+																</div>
+															</td>
+															<td width="20" valign="middle" align="left" bgcolor="" >
+																<div style="font-size: 10px">&emsp;</div>
+															</td>
+														</tr>
+														</tbody>
+													</table>
+													<div style="font-size: 20px">&emsp;</div>
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</th>
+								</tr>
+								</tbody>
+							</table>
+							<div style="font-size: 25px;">&emsp;</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<table align="center" class="container" width="600" style="max-width: 600px;  border-spacing: 0; background-color: #151520;" border="0"  cellpadding="0" cellspacing="0">
+					<tbody>
+					<tr>
+						<td align="center">
+							<table align="center" class="row" style="max-width: 320px; border-spacing: 0; " width="320" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+								<tr>
+									<th class="small-12" valign="middle" align="center">
+										<a href="" target="_blank">
+											<img width="318" src="image/btn.png" style="max-width: 318px;width: 100%;display: block" alt='кнопка'>
+										</a>
+									</th>
+								</tr>
+								</tbody>
+							</table>
+							<div style="font-size: 15px;">&emsp;</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<table align="center" class="container" width="600" style="max-width: 600px;  border-spacing: 0; background-color: #151520;" border="0"  cellpadding="0" cellspacing="0">
+					<tbody>
+					<tr>
+						<td>
+							<div style="font-size: 20px;">&emsp;</div>
+							<table align="center" class="" style="max-width: 600px; border-spacing: 0; " width="600" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+								<tr>
+									<th class="small-12 column" valign="middle" align="center">
+										<table width="540" border="0" cellpadding="0" cellspacing="0">
+											<tbody>
+											<tr>
+												<td width="540" valign="top" align="center" bgcolor="" >
+													<div style="font-family: Verdana; color: #FFFFFF; font-size: 8px; text-align: justify;font-weight: normal">
+														Вы получили это письмо, потому что оставляли свои контактны в анкетах и на сайте <a href="" style="color:#FFFFFF;">http://site.com</a><br><br>
+
+														Вы всегда можете <a href="" style="color:#FFFFFF;">отписаться от получения рассылок</a>.<br>
+														Посмотреть <a href="" style="color:#FFFFFF;">веб-версию</a> письма.
+													</div>
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</th>
+								</tr>
+								</tbody>
+							</table>
+							<div style="font-size: 15px;">&emsp;</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</center>
+		</td>
+	</tr>
+	</tbody>
+</table>
+</body>
+</html>
